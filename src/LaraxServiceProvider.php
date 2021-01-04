@@ -35,7 +35,7 @@ class LaraxServiceProvider extends ServiceProvider
         $this->loadRoutesFrom(__DIR__.'/routes.php');
         $this->publishes([
             __DIR__.'/config.php' => config_path('larax.php')
-        ], 'config');
+        ], 'larax-config');
 
         $router = $this->app->make(Router::class);
         $router->aliasMiddleware('AuthLaraxApi', AuthLaraxApi::class);
