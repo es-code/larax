@@ -1,7 +1,7 @@
 # larax
 larax is laravel exceptions logs package help you to track exception happened in real time and notify you and you can configure which data you want to log it or ignore it.
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/escode/larax.svg?style=flat-square)](https://packagist.org/packages/esocde/larax)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/escode/larax.svg?style=flat-square)](https://packagist.org/packages/escode/larax)
 [![Total Downloads](https://img.shields.io/packagist/dt/escode/larax.svg?style=flat-square)](https://packagist.org/packages/escode/larax)
 
 
@@ -45,7 +45,7 @@ return [
     //Note: if you enable detect user in exception larax will push StartSession::class and EncryptCookies::class in $middleware Kernel.php
     //and you should be comment StartSession::class  from $middlewareGroups => web
     
-    'detect_user'=>true,
+    'detect_user'=>false,
     //array of guards names will use it for detect user id
     'guards'=>['auth'],
 
@@ -60,10 +60,11 @@ return [
     ],
 
 
+    //send email when exception happened
     //enable send emails
     'enable_email'=>true,
 
-    //email list you want send message to them
+    //email list you want send notify them with exception data
     'emails'=>[
        //example
         //'es.code@yahoo.com',
@@ -78,7 +79,7 @@ to see the exceptions did happened in your application.
 
 [![Larax](https://i.ibb.co/2yG3Qgf/Screen-Shot-2021-01-04-at-11-37-47-PM.png)](https://i.ibb.co/2yG3Qgf/Screen-Shot-2021-01-04-at-11-37-47-PM.png)
 
-
+[![Larax exception info](https://i.ibb.co/qmyr3Xr/Screen-Shot-2021-01-04-at-11-56-41-PM.png)](https://i.ibb.co/qmyr3Xr/Screen-Shot-2021-01-04-at-11-56-41-PM.png)
 # Users
 users in larax is used to allow users to read exceptions using Larax Api.
 
