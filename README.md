@@ -33,6 +33,8 @@ open "/config/app.php" and append Escode\Larax\LaraxServiceProvider::class to pr
 
 ### Publish config file
 `php artisan vendor:publish -tag=larax-config`
+### Migrate database tables
+`php artisan migrate`
 
 ### Make Larax Handle Exception
 
