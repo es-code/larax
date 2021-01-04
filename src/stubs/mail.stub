@@ -1,0 +1,49 @@
+
+<html>
+<head>
+    <title>larax exceptions mail</title>
+    <style>
+        .p_data{
+            line-break: anywhere;
+            max-height: 200px;
+            overflow-x: scroll;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<table border="1" width="100%">
+    <thead>
+    <tr>
+        <th>Time</th>
+        <th>User Id</th>
+        <th>User Guard</th>
+        <th>User Ip</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr><td>{{time}}</td><td>{{user_id}}</td><td>{{guard}}</td><td>{{ip}}</td></tr>
+    </tbody>
+</table>
+<hr>
+<table border="1" width="100%"">
+    <thead>
+    <tr>
+        <th>Headers</th>
+        <th>Body</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr><td width="50%"><p class="p_data">{{headers}}</p></td><td><p class="p_data">{{body}}</p></td></tr>
+    </tbody>
+</table>
+<hr>
+<p class="p_data">{{exception}}</p>
+</body>
+</html>
+
+
+
+
