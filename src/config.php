@@ -14,7 +14,7 @@ return [
     ],
     //Note: if you enable detect user in exception larax will push StartSession::class and EncryptCookies::class in $middleware Kernel.php
     //and you should be comment StartSession::class  from $middlewareGroups => web
-    'detect_user'=>true,
+    'detect_user'=>false,
     //array of guards names will use it for detect user id
     'guards'=>['auth'],
 
